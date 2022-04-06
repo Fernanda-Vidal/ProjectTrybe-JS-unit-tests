@@ -14,9 +14,8 @@
 
 const average = (arrayVariavel) => {
   let soma = 0;
-  if (!Array.isArray(arrayVariavel) || arrayVariavel.length === 0) {
-    return undefined;
-  }
+  if (!Array.isArray(arrayVariavel) || arrayVariavel.length === 0) return undefined;
+  
   for (let i = 0; i < arrayVariavel.length; i += 1) {
       if (typeof arrayVariavel[i] !== 'number') {
         return undefined;
