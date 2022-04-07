@@ -47,5 +47,8 @@ describe('6 - Implemente os casos de teste para a função `productDetails`', ()
     expect(Object.values(productDetails('Alcool gel', 'Máscara')[0] !== Object.values(productDetails('Alcool gel', 'Máscara')[1])))
     expect(Object.values(productDetails('Máscara', 'Máscara')[0] === Object.values(productDetails('Máscara', 'Máscara')[1])))
   });
+  // it('Verifica se os dois productsId terminam com 123', () => {
+  //   expect(Object.entries(productDetails()).[0][1][0]).toEqual()
+  // })
   // Teste se os dois productIds terminam com 123.
 });
