@@ -43,12 +43,14 @@ describe('6 - Implemente os casos de teste para a função `productDetails`', ()
     expect(typeof productDetails()[0]).toBe('object');
     expect(typeof productDetails()[1]).toBe('object');
   });
-  it('Verifica se os dois objetos retornados, quando passados parâmetros diferentes, são diferentes entre si', () => {
+  it('Verifica se os dois objetos retornados, quando patssados parâmetros diferentes, são diferentes enre si', () => {
     expect(Object.values(productDetails('Alcool gel', 'Máscara')[0] !== Object.values(productDetails('Alcool gel', 'Máscara')[1])))
     expect(Object.values(productDetails('Máscara', 'Máscara')[0] === Object.values(productDetails('Máscara', 'Máscara')[1])))
   });
-  // it('Verifica se os dois productsId terminam com 123', () => {
-  //   expect(Object.entries(productDetails()).[0][1][0]).toEqual()
-  // })
-  // Teste se os dois productIds terminam com 123.
+  it('Verifica se os dois productsId terminam com 123', () => {
+    expect((productDetails('Máscara', 'Alcool')[0].details.productId.slice(-3))).toBe('123');
+    expect((productDetails('Máscara', 'Alcool')[1].details.productId.slice(-3))).toBe('123');
+  })
 });
+
+
