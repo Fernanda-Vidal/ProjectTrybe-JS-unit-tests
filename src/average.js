@@ -14,6 +14,7 @@
 
 const average = (arrayVariavel) => {
   let soma = 0;
+  // Pesquisei esta solução em https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray
   if (!Array.isArray(arrayVariavel) || arrayVariavel.length === 0) return undefined;
   
   for (let i = 0; i < arrayVariavel.length; i += 1) {
