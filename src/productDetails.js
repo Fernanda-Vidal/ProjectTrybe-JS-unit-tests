@@ -39,6 +39,7 @@ const productDetails = (firstProduct, secondProduct) => [
   },
 ];
 
-console.log(productDetails('alcool', 'mascara'));
+// console.log(Object.values(productDetails('alcool', 'mascara')));
 
 module.exports = productDetails;
+

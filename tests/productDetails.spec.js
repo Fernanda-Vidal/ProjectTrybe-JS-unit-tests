@@ -47,6 +47,7 @@ describe('6 - Implemente os casos de teste para a função `productDetails`', ()
     expect(Object.values(productDetails('Alcool gel', 'Máscara')[0] !== Object.values(productDetails('Alcool gel', 'Máscara')[1])))
     expect(Object.values(productDetails('Máscara', 'Máscara')[0] === Object.values(productDetails('Máscara', 'Máscara')[1])))
   });
+  // Para resolução deste ítem do requisito eu pesquisei a solução em https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
   it('Verifica se os dois productsId terminam com 123', () => {
     expect((productDetails('Máscara', 'Alcool')[0].details.productId.slice(-3))).toBe('123');
     expect((productDetails('Máscara', 'Alcool')[1].details.productId.slice(-3))).toBe('123');
