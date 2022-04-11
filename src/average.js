@@ -29,6 +29,6 @@ const average = (arrayVariavel) => {
   return result;
 };
 
-console.log(average([' ']));
+console.log(average([1, 2]));
 
 module.exports = average;
